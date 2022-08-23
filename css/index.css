@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+
+body {
+  margin: 12px 30px;
+  padding: 0%;
+
+  background-image: url("/images/backcover.svg");
+  background-size: cover;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 75%;
+  background-origin: content-box;
+  /* position: relative;
+  right: 0px; */
+}
+.LOGO {
+  width: 7rem;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.signin-btn {
+  position: relative;
+  top: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to right, #f186c888, #6f00ed);
+  color: white;
+  padding: 1px 12px;
+  border-radius: 15px;
+  border-color: violet;
+  width: 5rem;
+  height: 28px;
+}
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.img {
+  height: 530px;
+}
+.left-section {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+  font-family: Oswald;
+  color: darkslateblue;
+}
+h4 {
+  position: relative;
+  bottom: 2.8rem;
+  margin: 80px;
+  text-align: left;
+  margin-left: 140px;
+  color: darkslateblue;
+}
+.learn-more-btn {
+  position: relative;
+  bottom: 4.8rem;
+  right: 2.4rem;
+}
+.boo {
+  background: linear-gradient(to right, #e1a2b8, #9f2bc1);
+  color: whitesmoke;
+  font-size: medium;
+  padding: 7px 20px 7px;
+  border-color: violet;
+  height: 45px;
+  border-radius: 20px;
+}
+@media screen and (max-width:600px){
+  
+  body{
+    background-color:#d8b4f6;
+  }
+  .nav-items{
+    display: none;
+  }
+  nav img{
+    display: none;
+  }
+  .signin-btn{
+     position: relative;
+     left: 300px;
+  }
+  .intro-section{
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+  }
+  h4{
+    text-align: center;
+    width: 300px;
+    margin-left: 50px;
+  }
+  .learn-more-btn{
+    margin-left: 60px;
+  }
+  .imgs-div{
+    height: auto;
+    width: 400px;
+    margin-left: -40px;
+  }
+}
